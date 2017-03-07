@@ -2,8 +2,11 @@ angular
 	.module('angularToDo.list')
 	.controller('ListCtrl', ListCtrl);
 
-function ListCtrl(){
+function ListCtrl($stateParams){
 	var vm = this;
 
-	//mongoDB goes saved here objects from list
-}	
+	vm.list = {
+		todo: $stateParams.todo,
+		dueDate: $stateParams.dueDate
+	}
+}

@@ -1,0 +1,25 @@
+/* A little preparation first */
+*,
+*:before,
+*:after {
+    position: relative;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    content: '';
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-image: url('https://cdn.pixabay.com/photo/2017/03/02/19/11/pansy-2112148_960_720.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+

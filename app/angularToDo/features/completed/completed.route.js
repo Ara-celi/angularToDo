@@ -5,7 +5,7 @@ angular
 function completedConfig($stateProvider) {
 	$stateProvider.state({
 		name: 'completed',
-		url: '/',
+		url: '/completed',
 		templateUrl: '/angularToDo/features/completed/completed.html',
 		controller: 'CompletedCtrl',
 		controllerAs: 'CompletedVM'

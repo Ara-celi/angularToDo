@@ -5,6 +5,7 @@ angular
 function CreateCtrl(){
 	var vm = this;
 
+function resetView() {}
 	vm.todo = '';
 	vm.dueDate = '';
 }	

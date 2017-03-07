@@ -7,7 +7,7 @@ var port = 3000;
 
 mongoose.Promise = Promise;
 
-var DbList = require('./app/angularToDo/features/components/dbList/dbList.js');
+var DbList = require('./app/angularToDo/listModel.js');
 
 // Configure app with body parser
 app.use(bodyParser.urlencoded({
@@ -38,10 +38,10 @@ db.once("open", function() {
 // ======
 
 // Route to post our form submission to mongoDB via mongoose
-app.post("/submit", function(req, res) {
+app.post("/create", function(req, res) {
 
   // We use the "DbList" class we defined above to check our req.body against our user model
-  var user = new DbList(req.body);
+  var todos = new DbList(req.body);
 
   // With the new "DbList" object created, we can save our data to mongoose
   // Notice the different syntax. The magic happens in userModel.js

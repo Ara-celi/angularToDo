@@ -4,6 +4,5 @@ angular
 
 function CompletedCtrl(){
 	var vm = this;
-
 	
 }	
