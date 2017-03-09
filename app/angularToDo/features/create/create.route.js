@@ -1,11 +1,12 @@
+//Links create.controller.js, create.route.js and create.html
 angular
 	.module('angularToDo.create')
-	.config(createConfig);
+	.config(createConfig); //takes a function as a property
 
 function createConfig($stateProvider) {
 	$stateProvider.state({
 		name: 'create',
-		url: '/create',
+		url: '/',
 		templateUrl: '/angularToDo/features/create/create.html',
 		controller: 'CreateCtrl',
 		controllerAs: 'CreateVM'

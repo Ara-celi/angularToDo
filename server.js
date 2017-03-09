@@ -7,7 +7,7 @@ var port = 3000;
 
 mongoose.Promise = Promise;
 
-var DbList = require('./app/angularToDo/listModel.js');
+var DbList = require('./models/listModel.js');
 
 // Configure app with body parser
 app.use(bodyParser.urlencoded({
