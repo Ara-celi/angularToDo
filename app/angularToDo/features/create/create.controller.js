@@ -2,7 +2,7 @@ angular
 	.module('angularToDo.create')
 	.controller('CreateCtrl', CreateCtrl);
 
-function CreateCtrl($scope, todos){
+function CreateCtrl($http, todos){
 	var vm = this;
 
 	vm.todosList = {
@@ -11,12 +11,10 @@ function CreateCtrl($scope, todos){
 	}
 
     vm.addToList = function() {
-    	var todo = new todos.Todo(
-    		vm.todosList.todo,
-    		vm.todosList.dueDate
-    		);
-
-    	todos.todos.push(todo);
-    	console.log(todos.todos)
+        console.log("its working")
+    	$http.post('/create', vm.todosList)
+        .then(function(response){
+            console.log(response)
+        })
     }		
 }	

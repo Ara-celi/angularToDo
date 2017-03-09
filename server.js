@@ -45,14 +45,14 @@ app.post("/create", function(req, res) {
 
   // With the new "DbList" object created, we can save our data to mongoose
   // Notice the different syntax. The magic happens in userModel.js
-  user.save(function(error, doc) {
+  todos.save(function(error, doc) {
     // Send any errors to the browser
     if (error) {
-      res.send(error);
+      res.json(error);
     }
     // Otherwise, send the new doc to the browser
     else {
-      res.send(doc);
+      res.json(doc);
     }
   });
 });

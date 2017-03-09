@@ -2,20 +2,16 @@
   <h1>AngularJS To-Do</h1>
 </div>
 
-<ul class="nav nav-tabs">
-  <li role="presentation" class="active"><a href="#">Create</a></li>
-  <li role="presentation"><a href="#">To Do List</a></li>
-  <li role="presentation"><a href="#">Completed</a></li>
-</ul>
 
 
 <form>
 	To Do: <input type="text" ng-model="CreateVM.todo">
 	<br>
 	Due: <input type="date" ng-model="CreateVM.dueDate">
+	<input type="submit" value="save" ng-click="CreateVM.addToList()">
 </form>
 
-<button type="button" value="save" ng-click="createVM.addToList()">Add to List</button>
+
 
  <!--this shows what you are typing in the input field ng-model='CreateVM.todo"-->
 <!--  {{CreateVM.todo}} -->

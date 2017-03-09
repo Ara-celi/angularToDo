@@ -6,7 +6,7 @@ angular
 function createConfig($stateProvider) {
 	$stateProvider.state({
 		name: 'create',
-		url: '/',
+		url: '/create',
 		templateUrl: '/angularToDo/features/create/create.html',
 		controller: 'CreateCtrl',
 		controllerAs: 'CreateVM'

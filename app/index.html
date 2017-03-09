@@ -16,6 +16,12 @@
 	</head>
 
 	<body ng-app="angularToDo">
+		<ul class="nav nav-tabs">
+	  		<li role="presentation" class="active"><a ui-sref="create">Create</a></li>
+	  		<li role="presentation"><a ui-sref="list">To Do List</a></li>
+	  		<li role="presentation"><a ui-sref="completed">Completed</a></li>
+		</ul>
+
 		<ui-view></ui-view>
 		
 		<script src="angularToDo/angularToDo.module.js"></script>
